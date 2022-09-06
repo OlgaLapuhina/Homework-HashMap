@@ -38,8 +38,8 @@ public class Main {
             }
 
         }
-        System.out.println("Чаще всего встречается символ - " + getKey(letter, max));
-        System.out.println("Реже всего встречается символ - " + getKey(letter, min));
+        System.out.println("Р§Р°С‰Рµ РІСЃРµРіРѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ СЃРёРјРІРѕР» - " + getKey(letter, max));
+        System.out.println("Р РµР¶Рµ РІСЃРµРіРѕ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ СЃРёРјРІРѕР» - " + getKey(letter, min));
 
     }
 
