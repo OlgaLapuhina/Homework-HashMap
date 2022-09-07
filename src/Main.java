@@ -14,7 +14,7 @@ public class Main {
 
         for (int i = 0; i < symbols.length; i++) {
             if (!Character.isLetter(loremIpsum.charAt(i))) {
-                letter.remove('i');
+                letter.remove(symbols[i]);
             } else if (!letter.containsKey(symbols[i])) {
                 letter.put(symbols[i], 1);
             } else {
