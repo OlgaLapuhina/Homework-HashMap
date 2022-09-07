@@ -12,18 +12,17 @@ public class Main {
         Map<Character, Integer> letter = new HashMap<>();
         char[] symbols = loremIpsum.toLowerCase(Locale.ROOT).toCharArray();
 
-
         for (int i = 0; i < symbols.length; i++) {
-            if (!letter.containsKey(symbols[i])) {
+            if (!Character.isLetter(loremIpsum.charAt(i))) {
+                letter.remove('i');
+            } else if (!letter.containsKey(symbols[i])) {
                 letter.put(symbols[i], 1);
             } else {
                 int maxValue = (letter.get(symbols[i]) + 1);
                 letter.put(symbols[i], maxValue);
             }
         }
-        letter.remove(' ');
-        letter.remove(',');
-        letter.remove('.');
+        
         System.out.println(letter);
 
         int max = 0;
